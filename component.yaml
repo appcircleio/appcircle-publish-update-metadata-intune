@@ -1,0 +1,11 @@
+platform: Common
+purpose: Publish
+buildPlatform:
+displayName: "Update Metadata on Micorosft Intune"
+description: "Updates current METADATA info to Microsoft Intune"
+marketPlace: "MicrofostIntune"
+runOn: "Server"
+processFilename: bash
+processArguments: '%AC_STEP_TEMP%/main.sh'
+files:
+- "main.sh"
